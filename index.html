@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+
+    <div class="container">
+        <!-- Formulário para adicionar itens -->
+        <div class="form">
+            <input type="text" id="itemName" placeholder="Nome do item">
+            <input type="number" id="itemPrice" placeholder="Preço" step="0.01">
+            <button id="addItemBtn">Adicionar Item</button>
+        </div>
+
+        <!-- Barra de busca -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar por nome ou preço">
+        </div>
+
+        <!-- Botões de ordenação -->
+        <div class="sort-buttons">
+            <button id="sortNameAscBtn">Ordenar Nome Crescente</button>
+            <button id="sortNameDescBtn">Ordenar Nome Decrescente</button>
+            <button id="sortPriceAscBtn">Ordenar Preço Crescente</button>
+            <button id="sortPriceDescBtn">Ordenar Preço Decrescente</button>
+        </div>
+
+        <!-- Exibição do preço total -->
+        <div class="total-price">
+            <b><span>Preço Total: </span><span id="totalPrice">R$ 0.00</span></b>
+        </div>
+
+        <!-- Tabela para exibir itens -->
+        <div class="table-container">
+            <table id="shoppingListTable">
+                <thead>
+                    <tr>
+                        <th>Nome do Item</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão adicionadas aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Container para textareas de notas -->
+        <div class="notes-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
